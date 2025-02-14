@@ -1,6 +1,6 @@
 # Drone-Pose-Estimation
 
-
+<img src='jg.gif'>
 
 ### Problem Statement
 Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertial Measurement Unit), the task is to compute the pose and velocity of the drone.
@@ -31,7 +31,10 @@ Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertia
 
 This process integrates both vision-based methods and IMU readings to achieve robust pose and velocity estimation for the drone in a dynamic environment.
 
-
+<img src='part2_data2.png'>
+<img src='part2_data1.png'>
+<img src='part1_data_1.png'>
+<img src='part1_data_2.png'>
 
 ### Tools
 MATLAB
