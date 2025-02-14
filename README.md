@@ -15,7 +15,6 @@ Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertia
 
 2. **Pose Estimation (Position and Orientation)**  
    - Estimate the drone’s pose (position and orientation) using the homography matrix.
-   - Apply Singular Value Decomposition (SVD) to obtain the best estimate.
      <img src='Part1_eq1.png'>
      <img src='Part1_eq2.png'>
      <img src='Part1_eq3.png'>
@@ -44,6 +43,8 @@ Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertia
      <img src='measurement_model_2.png'> 
 
 This process integrates both vision-based methods and IMU readings to achieve robust pose and velocity estimation for the drone in a dynamic environment.
+
+### Result
 
 <img src='part2_data2.png'>
 <img src='part2_data1.png'>
