@@ -17,7 +17,7 @@ R_C^B & -R_B^C S(r_{BC}^B) \\
 B \omega_B^W \\
 B \omega_B^W
 \end{bmatrix}$$
-
+ 
 4. Inverse transformation matrix equation:
    
 $$\begin{bmatrix}
