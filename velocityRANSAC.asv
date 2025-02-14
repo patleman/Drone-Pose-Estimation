@@ -1,0 +1,32 @@
+function [Vel] = velocityRANSAC(optV,optPos,Z,R_c2w,e)
+%% CHANGE THE NAME OF THE FUNCTION TO velocityRANSAC
+    %% Input Parameter Description
+    % optV = The optical Flow
+    % optPos = Position of the features in the camera frame 
+    % Z = Height of the drone
+    % R_c2w = Rotation defining camera to world frame
+    % e = RANSAC hyper parameter    
+    
+    %% Output Parameter Description
+    % Vel = Linear velocity and angualr velocity vector
+    Vel=pinv(optPos)*optV;
+    p_inliers_count=0;
+    inliers_count=0;
+    for i=1:20
+
+        newoptPos=[];
+        newoptV=[];
+        for j=1:2:length(h)
+           if(norm(optPos(j:j+1,:)*Vel-optV(j:j+1)))<e
+             newoptPos=[newoptPos ;optPos(j:j+1,:)];
+             newoptV=[newoptV;optV(j:j+1,:)];
+             inliers_count=inliers_count+1;
+           end
+        end
+
+        if(inliers_count>p_inliers_count)
+            Vel=pinv(neoptPos)*optV;
+        end
+        p_inliers_count=inliers_count;
+    end
+end
