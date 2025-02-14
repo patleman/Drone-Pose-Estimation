@@ -1,6 +1,6 @@
 # Drone-Pose-Estimation
 
-<img src='jg.gif'>
+<img src='final_dp.gif'>
 
 ### Problem Statement
 Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertial Measurement Unit), the task is to compute the pose and velocity of the drone.
