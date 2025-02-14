@@ -14,7 +14,6 @@ $$\begin{bmatrix}
 R_C^B & -R_B^C S(r_{BC}^B) \\
 0 & R_B^C
 \end{bmatrix}$$
-
 $$\begin{bmatrix}
 B \omega_B^W \\
 B \omega_B^W
