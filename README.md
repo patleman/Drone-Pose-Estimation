@@ -9,8 +9,7 @@ $$\begin{bmatrix}
 c_p W \\
 c_\omega W
 \end{bmatrix}
-=$$
-$$\begin{bmatrix}
+=$$ $$\begin{bmatrix}
 R_C^B & -R_B^C S(r_{BC}^B) \\
 0 & R_B^C
 \end{bmatrix}
