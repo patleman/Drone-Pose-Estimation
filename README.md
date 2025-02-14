@@ -3,7 +3,7 @@
 $$\[ z_t = c_v W = c_p W = g(x_2, x_3, B \omega_B^W) + \eta \quad \eta \sim N(0, R) \]$$
 
 2. Transformation matrix equation:
-$$\[
+$$
 \begin{bmatrix}
 c_p W \\
 c_\omega W
@@ -17,10 +17,10 @@ R_C^B & -R_B^C S(r_{BC}^B) \\
 B \omega_B^W \\
 B \omega_B^W
 \end{bmatrix}
-\]$$
+$$
 
 3. Inverse transformation matrix equation:
-$$\[
+$$
 \begin{bmatrix}
 B \omega_B^W \\
 B \omega_B^W
@@ -34,12 +34,11 @@ R_C^B & -R_B^C S(r_{CB}^C) \\
 C_p W \\
 C_\omega W
 \end{bmatrix}
-\]$$
+$$
 
 4. Velocity and position update equations:
-$$\[
-c_v W = g_{\mu}(x_2, x_3, B \omega_B^W)
-\]
-\[
-c_p W = R_B^C I(x_2, x_3) - R_B^C S(r_{BC}^B) \quad R_C^B C_\omega W
-\]$$
+
+$$c_v W = g_{\mu}(x_2, x_3, B \omega_B^W)$$
+
+
+$$c_p W = R_B^C I(x_2, x_3) - R_B^C S(r_{BC}^B) \quad R_C^B C_\omega W$$
