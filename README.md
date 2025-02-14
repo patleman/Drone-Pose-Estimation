@@ -8,6 +8,7 @@ Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertia
 ### Methodology
 
    <img src='state.png'>
+   
 1. **AprilTag Detection and Position Calculation**  
    - Detect AprilTags within the camera’s downward-facing view.
    - associate the detected Tag with the position in the world coordinate system.
@@ -28,17 +29,19 @@ Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertia
    - Formulate the motion field equation to estimate the drone’s velocity in the camera frame.
      <img src='Part2_eq1.png'>
      <img src='Part2_eq2.png'>
-     <img src='Part2_eq3.png'>
+     
 
 5. **Outlier Rejection with RANSAC**  
    - Use the RANSAC (Random Sample Consensus) algorithm to reject outliers from the data.
    - Refine the estimate of the drone’s velocity for more accurate results.
+     <img src='Part2_eq3.png'>
 
 6. **Fusion with IMU Data Using UKF**  
    - Use the Unscented Kalman Filter (UKF) to fuse the velocity and pose estimates from the camera with data from the IMU for better overall accuracy.
      <img src='prediction.png'>
      <img src='update_1.png'>
-     <img src='update_2.png'> 
+     <img src='update_2.png'>
+     <img src='measurement_model_2.png'> 
 
 This process integrates both vision-based methods and IMU readings to achieve robust pose and velocity estimation for the drone in a dynamic environment.
 
