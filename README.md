@@ -4,6 +4,8 @@
 $$ z_t = c_v W = c_p W = g(x_2, x_3, B \omega_B^W) + \eta \quad \eta \sim N(0, R)$$
 
 3. Transformation matrix equation:
+
+   $ \prescript{14}{2}{\mathbf{C}} $
    
 $$\begin{bmatrix}
 c_p W \\
@@ -18,7 +20,7 @@ B \omega_B^W \\
 B \omega_B^W
 \end{bmatrix}$$
  
-4. Inverse transformation matrix equation:
+5. Inverse transformation matrix equation:
    
 $$\begin{bmatrix}
 B \omega_B^W \\
